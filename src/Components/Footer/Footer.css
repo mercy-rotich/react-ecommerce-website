@@ -37,6 +37,16 @@
     background: #fbfbfb;
     border: 1px solid #ebebeb;
 }
+
+ /*.footer-copyright hr{
+    width: 80%;
+    color: #5e5d5d;
+    
+  
+    
+    
+    
+}*/
 .footer-copyright{
     display: flex;
     flex-direction: column;
@@ -46,11 +56,4 @@
     margin-bottom: 30px;
     color: #1a1a1a;
     font-size: 20px;
-}
-.footer-copyright hr{
-    width: 80%;
-    border: none;
-    border-radius: 10px;
-    height: 3px;
-    color: #c7c7c7;
 }

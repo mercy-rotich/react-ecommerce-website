@@ -1,19 +1,28 @@
 import React from 'react'
 import './CSS/LoginSignup.css'
+import { Link, useNavigate } from 'react-router-dom'
+import Shop from './Shop'
+
+
 
 const LoginSignup = () => {
+  const navigate = useNavigate();
+
+  const handleContinue = ()=>{
+    navigate ('/')
+  }
   return (
     <div className='loginsignup'>
       <div className="loginsignup-container">
         <h1>Sign Up</h1>
         <div className="loginsignup-fields">
-          <input type="text" placeholder='Your Name' />
-          <input type="email" placeholder='Email Adress' />
+          <input type="text" placeholder='Your Name' required/>
+          <input type="email" placeholder='Email Adress' required />
           <input type="password" placeholder='Password'/>
         </div>
-        <button>Continue</button>
+        <button onClick={handleContinue}>Continue</button>
         <p className="loginsignup-login">
-          Already have an account? <span>Login Here</span>
+          Already have an account? <Link to="#">Login Here</Link>
         </p>
         <div className="loginsignup-agree">
             <input type="checkbox" name='' id='' />

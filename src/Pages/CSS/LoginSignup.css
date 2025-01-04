@@ -50,9 +50,10 @@ color: white;
     font-size: 14px;
     font-weight: 500;
 }
-.loginsignup-login span{
+.loginsignup-login a{
     color: #ff4141;
     font-weight: 600;
+    text-decoration: none;
 }
 .loginsignup-agree{
     display: flex;

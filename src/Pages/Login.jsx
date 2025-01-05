@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './CSS/SignUp.css'
 import { Link,useNavigate } from 'react-router-dom'
 import Swal from 'sweetalert2'
+import CustomSwal from '../Utils/CustomSwal'
 
 
 const Login = () => {
@@ -32,7 +33,7 @@ const Login = () => {
         userData.email.trim() === "" ||
         userData.password.trim() === ""
     ){
-        Swal.fire({
+        CustomSwal.fire({
             icon:"error",
             text:"access denied",
             confirmButtonText:"OK",
@@ -51,7 +52,7 @@ const Login = () => {
         );
 
         if(!user){
-            Swal.fire({
+            CustomSwal.fire({
                 icon:"error",
                 text:"wrong credentials",
                 confirmButtonText:"OK"
@@ -59,10 +60,11 @@ const Login = () => {
             return;
         }
         else{
-            Swal.fire({
+            CustomSwal.fire({
                 icon:"success",
                 text:"access granted",
-                confirmButtonText:"OK,"
+                confirmButtonText:"OK",
+                
             }).then(()=>{
                 navigate('/')
             })

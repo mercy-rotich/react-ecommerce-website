@@ -30,11 +30,7 @@ const SignUp = () => {
       userData.confirmpassword.trim() === "" ||
       userData.password !== userData.confirmpassword
     ) {
-      Swal.fire({
-        icon: "error",
-        text: "Input all the fields with correct credentials",
-        confirmButtonText: "OK",
-      });
+      
       return;
     }
 

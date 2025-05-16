@@ -34,7 +34,7 @@ const Login = () => {
         userData.password.trim() === ""
     ){
         CustomSwal.fire({
-            icon:"error",
+            icon:"ERROR",
             text:"access denied",
             confirmButtonText:"OK",
         });
@@ -53,7 +53,7 @@ const Login = () => {
 
         if(!user){
             CustomSwal.fire({
-                icon:"error",
+                icon:"ERROR",
                 text:"wrong credentials",
                 confirmButtonText:"OK"
             });
@@ -61,7 +61,7 @@ const Login = () => {
         }
         else{
             CustomSwal.fire({
-                icon:"success",
+                icon:"SUCCESS",
                 text:"access granted",
                 confirmButtonText:"OK",
                 

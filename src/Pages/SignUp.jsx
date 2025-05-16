@@ -57,7 +57,7 @@ const SignUp = () => {
         title: "REGISTERED SUCCESSFULLY",
         confirmButtonText: "OK",
       }).then(() => {
-        navigate('/login');
+        navigate('/');
       });
     }
   };
